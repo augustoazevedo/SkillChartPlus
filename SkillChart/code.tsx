@@ -1,4 +1,4 @@
-const { widget } = figma;
+const { widget } = figma; // should I give it a name? or it is a default?
 const {
   useSyncedState,
   useSyncedMap,
@@ -19,45 +19,57 @@ type Category = {
   skillDescriptions: string[];
 };
 
-const strategyCategory = {
-  name: "Strategy",
+const domainCategory = {
+  name: "Domain knowledge",
   color: "#9747FF",
-  skills: ["Product", "Research", "Vision"],
-  skillDescriptions: ["What we're building and why", "Qualitative and quantitative evidence", "Future pathways and how things fit together"],
+  skills: ["Industry knowledge", "Competitor awareness", "Regulatory knowledge"],
+  skillDescriptions: ["Understanding of the workings and trends of a specific industry", "Knowledge of the strengths, weaknesses, and strategies of competing businesses in the same industry", "Familiarity with the laws, rules, and regulations that govern a specific industry."],
 };
-const craftCategory = {
-  name: "Craft",
+const processCategory = {
+  name: "Process",
   color: "#0D99FF",
-  skills: ["Visual", "Interaction", "Systems"],
-  skillDescriptions: ["How things look", "How things behave", "Underlying models, IAs, etc."],
+  skills: ["Planning, execution & follow-up", "Roadmap Planning", "Launch Strategy", "Communication","Sharing work & incorporating feedback", "Backlog management"],
+  skillDescriptions: ["The ability to plan and execute tasks and initiatives while monitoring progress and adjusting as needed", "The skill of developing a long-term plan for achieving business goals and objectives", "Planinng and execution of successful product or service launches", "Effectively conveying information and ideas to others", "Collaborating with others and integrating feedback into work", "Managing a backlog of tasks, prioritizing them based on  needs"],
 };
-const writingCraftCategory = {
-  name: "Writing",
+const analyticsCategory = {
+  name: "Analytics",
   color: "#0D99FF",
-  skills: ["Content", "Copywriting", "Systems\u200B", "Design"],
-  skillDescriptions: ["Figuring out what to write", "Finding the perfect words", "Building consistency and cohesion", "Developing your UX design chops"],
+  skills: ["Problem solving", "Data Analysis", "Metrics identification", "Metrics prioritization"],
+  skillDescriptions: ["identifing, analyzing, and solving problems effectively", " Collecting and analyzing data to gain insights and make informed decisions", "Identifying relevant metrics that measure progress towards business goals", "Prioritizing metrics based on their importance and impact on business objectives"],
 };
-const collabCategory = {
-  name: "Collaboration",
+const uxuiCategory = {
+  name: "UX/UI",
   color: "#14AE5C",
-  skills: ["Communication", "Process", "Mindset"],
-  skillDescriptions: ["Written, verbal, and interpersonal skills", "Resiliency and growth orientation", "Sharing work and incorporating feedback"],
+  skills: ["Visual (UI)", "User experience (UX)", "UX practices", "User research"],
+  skillDescriptions: ["Designing visually appealing and easy to use products", "Designing and creating user-centered digital experiences", " Implementing best practices and methodologies", "Conducting research to understand user behavior, needs, and preferences"],
 };
-const impactCategory = {
-  name: "Impact",
+const technicalCategory = {
+  name: "Technical",
   color: "#FFCD29",
-  skills: ["Effectiveness", "Leadership", "Citizenship"],
-  skillDescriptions: ["Output, follow-through, and business impact", "Mentorship, ability to influence and drive change", "Improving our culture, hiring, and company practices"],
+  skills: ["Technical understanding", "Quality assurance"],
+  skillDescriptions: ["Understanding and applying technical knowledge and skills", ": Ensuring the quality of products or services "],
+};
+const leadershipCategory = {
+  name: "Leadership",
+  color: "#FFCD29",
+  skills: ["Team Management", "Inspirational leadership", "Considerate leadership", "Developing leaders"],
+  skillDescriptions: ["Managing and guiding team members", "Inspiring and motivating team members", "Practicing empathy and consideration towards team members", "Mentoring and coaching others"],
+};
+const mindsetCategory = {
+  name: "Mindset",
+  color: "#FFCD29",
+  skills: ["Result ownership", "Grit"],
+  skillDescriptions: ["Taking responsibility for own results", "Persisting and persevering through challenges"],
 };
 
-const categories = [strategyCategory, craftCategory, writingCraftCategory, collabCategory, impactCategory];
+const categories = [domainCategory, processCategory, analyticsCategory, uxuiCategory, technicalCategory, leadershipCategory, mindsetCategory];
 
 function Widget() {
   const voteMap = useSyncedMap<number>("skill-level")
   const [userLevel, setUserLevel] = useSyncedState<number>('level', 1)
   const [showLevels, setShowLevels] = useSyncedState<boolean>("isShown", false)
-  const [role, setRole] = useSyncedState<string>("role", "Design")
-  const roleOptions = [{option: "Design", label: "Design"}, {option: "Writing", label: "Writing"}]
+  const [role, setRole] = useSyncedState<string>("role", "Product") //check this and delete if needed
+  const roleOptions = [{option: "Design", label: "Design"}, {option: "Writing", label: "Writing"}] //check this and delete if needed
 
   usePropertyMenu(
     [
