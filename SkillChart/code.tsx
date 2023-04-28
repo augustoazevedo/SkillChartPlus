@@ -1,4 +1,4 @@
-const { widget } = figma; // should I give it a name? or it is a default?
+const { widget } = figma; 
 const {
   useSyncedState,
   useSyncedMap,
@@ -29,13 +29,13 @@ const processCategory = {
   name: "Process",
   color: "#0D99FF",
   skills: ["Planning, execution & follow-up", "Roadmap Planning", "Launch Strategy", "Communication","Sharing work & incorporating feedback", "Backlog management"],
-  skillDescriptions: ["The ability to plan and execute tasks and initiatives while monitoring progress and adjusting as needed", "The skill of developing a long-term plan for achieving business goals and objectives", "Planinng and execution of successful product or service launches", "Effectively conveying information and ideas to others", "Collaborating with others and integrating feedback into work", "Managing a backlog of tasks, prioritizing them based on  needs"],
+  skillDescriptions: ["Planning and executing tasks and initiatives while monitoring progress and adjusting as needed", "Developing a long-term plan for achieving business goals and objectives", "Planinng and execution of successful product or service launches", "Effectively conveying information and ideas to others", "Collaborating with others and integrating feedback into work", "Managing a backlog of tasks, prioritizing them based on  needs"],
 };
 const analyticsCategory = {
   name: "Analytics",
   color: "#0D99FF",
   skills: ["Problem solving", "Data Analysis", "Metrics identification", "Metrics prioritization"],
-  skillDescriptions: ["identifing, analyzing, and solving problems effectively", " Collecting and analyzing data to gain insights and make informed decisions", "Identifying relevant metrics that measure progress towards business goals", "Prioritizing metrics based on their importance and impact on business objectives"],
+  skillDescriptions: ["Identifing, analyzing, and solving problems effectively", " Collecting and analyzing data to gain insights and make informed decisions", "Identifying relevant metrics that measure progress towards business goals", "Prioritizing metrics based on their importance and impact on business objectives"],
 };
 const uxuiCategory = {
   name: "UX/UI",
