@@ -1,7 +1,7 @@
 {
-  "name": "Skills-Chart",
+  "name": "Skills-Chart-PO",
   "version": "1.0.0",
-  "description": "Your Figma widget",
+  "description": "Your Figma widget for PO levels",
   "main": "code.js",
   "scripts": {
     "build": "esbuild code.tsx --watch --bundle --outfile=code.js"
