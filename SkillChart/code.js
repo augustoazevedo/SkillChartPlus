@@ -2,64 +2,64 @@
   // levelinfo.tsx
   var levelDescriptions = [
     {
-      skill: "Industry knowledge",
+      skill: "Industry",
       level: "1",
-      description: "Industry knowledge L1\n\nYou have a basic understanding of the industry landscape, including current trends and challenges.\n\nYou are familiar with the industry's major players and their offerings, and you actively work to expand your knowledge of the industry.\n\n"
+      description: "Industry L1\n\nYou have a basic understanding of the industry landscape, including current trends and challenges.\n\nYou are familiar with the industry's major players and their offerings, and you actively work to expand your knowledge of the industry.\n\n"
     },
     {
-      skill: "Industry knowledge",
+      skill: "Industry",
       level: "2",
-      description: "Industry knowledge L2\n\nYou possess comprehensive knowledge of the industry, including emerging trends, opportunities, and potential threats. You can analyze market shifts and anticipate future developments.\n\nYou effectively apply industry knowledge to product development and strategy.\n\n"
+      description: "Industry L2\n\nYou possess comprehensive knowledge of the industry, including emerging trends, opportunities, and potential threats. You can analyze market shifts and anticipate future developments.\n\nYou effectively apply industry knowledge to product development and strategy.\n\n"
     },
     {
-      skill: "Industry knowledge",
+      skill: "Industry",
       level: "3",
-      description: "Industry knowledge L3\n\nYou have an expert-level understanding of the industry, with a proven track record of leveraging this knowledge to drive product success.\n\nYou are recognized as an industry thought leader and can influence market trends and developments.\n\nYou guide product strategy based on deep industry insights.\n\n"
+      description: "Industry L3\n\nYou have an expert-level understanding of the industry, with a proven track record of leveraging this knowledge to drive product success.\n\nYou are recognized as an industry thought leader and can influence market trends and developments.\n\nYou guide product strategy based on deep industry insights.\n\n"
     },
     {
-      skill: "Competitor awareness",
+      skill: "Competitors",
       level: "1",
-      description: "Competitor awareness L1\n\nYou are aware of key competitors and their products. You understand basic competitive analysis techniques and assist in gathering competitive intelligence.\n\nYou recognize potential opportunities for product differentiation.\n\n"
+      description: "Competitors L1\n\nYou are aware of key competitors and their products. You understand basic competitive analysis techniques and assist in gathering competitive intelligence.\n\nYou recognize potential opportunities for product differentiation.\n\n"
     },
     {
-      skill: "Competitor awareness",
+      skill: "Competitors",
       level: "2",
-      description: "Competitor awareness L2\n\nYou are proficient in conducting in-depth competitive analysis and identifying strengths and weaknesses of competing products.\n\nYou develop strategies to capitalize on competitor vulnerabilities and create a unique value proposition for the product.\n\n"
+      description: "Competitors L2\n\nYou conduct in-depth competitive analysis and identify strengths and weaknesses of competing products.\n\nYou develop strategies to create a unique value proposition for the product.\n\n"
     },
     {
-      skill: "Competitor awareness",
+      skill: "Competitors",
       level: "3",
-      description: "Competitor awareness L3\n\nYou are an expert in understanding the competitive landscape and anticipating competitor moves.\n\nYou drive product strategy and positioning based on deep competitive insights. You ensure the product maintains a competitive edge in the market.\n\n"
+      description: "Competitors L3\n\nYou are an expert in understanding the competitive landscape and anticipating competitor moves.\n\nYou drive product strategy and positioning based on deep competitive insights. You ensure the product maintains a competitive edge in the market.\n\n"
     },
     {
-      skill: "Regulatory knowledge",
+      skill: "Regulations",
       level: "1",
-      description: "Regulatory knowledge L1\n\nYou have a limited understanding of relevant laws, regulations, and compliance requirements.\n\nYou actively work to expand your knowledge and ensure the product is developed with compliance in mind.\n\n"
+      description: "Regulations L1\n\nYou have a limited understanding of relevant laws, regulations, and compliance requirements.\n\nYou actively work to expand your knowledge and ensure the product is developed with compliance in mind.\n\n"
     },
     {
-      skill: "Regulatory knowledge",
+      skill: "Regulations",
       level: "2",
-      description: "Regulatory knowledge L2\n\nYou possess comprehensive knowledge of the regulatory landscape, including current and upcoming regulations.\n\nYou ensure that the product complies with all necessary requirements and identify potential risks.\n\n"
+      description: "Regulations L2\n\nYou possess comprehensive knowledge of the regulatory landscape, including current and upcoming regulations.\n\nYou ensure that the product complies with all necessary requirements and identify potential risks.\n\n"
     },
     {
-      skill: "Regulatory knowledge",
+      skill: "Regulations",
       level: "3",
-      description: "Regulatory knowledge L3\n\nYou are an expert in navigating the complex regulatory environment and anticipating changes in the regulatory landscape.\n\nYou guide the product team in developing compliant solutions and mitigating risks associated with regulatory non-compliance.\n\n"
+      description: "Regulations L3\n\nYou are an expert in navigating the complex regulatory environment and anticipating changes in the regulatory landscape.\n\nYou guide the product team in developing compliant solutions and mitigating risks associated with regulatory non-compliance.\n\n"
     },
     {
-      skill: "Planning, execution & follow-up",
+      skill: "Planning & execution",
       level: "1",
-      description: "Planning, execution & follow-up L1\n\nYou need help in structuring work, struggle to meet deadlines and focus on tasks.\n\nYou do not adequately follow up on and close tasks.\n\n"
+      description: "Planning & execution L1\n\nYou need help in structuring work, struggle to meet deadlines and focus on tasks.\n\nYou do not adequately follow up on and close tasks.\n\n"
     },
     {
-      skill: "Planning, execution & follow-up",
+      skill: "Planning & execution",
       level: "2",
-      description: "Planning, execution & follow-up L2\n\nYou can structure your work and execute it in a timely manner, follow up and close tasks.\n\nYou generally ensure tasks are completed and rarely miss important details.\n\nYou maintain clear focus on your work.\n\n"
+      description: "Planning & execution L2\n\nYou can structure your work and execute it in a timely manner, follow up and close tasks.\n\nYou generally ensure tasks are completed and rarely miss important details.\n\nYou maintain clear focus on your work.\n\n"
     },
     {
-      skill: "Planning, execution & follow-up",
+      skill: "Planning & execution",
       level: "3",
-      description: "Planning, execution & follow-up L3\n\nYou structure, define, and scope your own work as well as the team's work in a way that leads to effectively meeting deadlines.\n\nYou consistently follow up and improve based on the follow-up.\n\nYou effectively delegate tasks, set up processes, and monitor progress on your tasks as well as delegated tasks. You avoid unnecessary crunches.\n\n"
+      description: "Planning & execution L3\n\nYou structure, define, and scope your own work as well as the team's work in a way that leads to effectively meeting deadlines.\n\nYou consistently follow up and improve based on the follow-up.\n\nYou effectively delegate tasks, set up processes, and monitor progress on your tasks as well as delegated tasks. You avoid unnecessary crunches.\n\n"
     },
     {
       skill: "Roadmap Planning",
@@ -105,21 +105,6 @@
       skill: "Communication",
       level: "3",
       description: "Communication L3\n\nYou effectively collect and share information within and across teams. You coach the team towards effective written communication and are skilled at facilitating insightful meetings and workshops.\n\n"
-    },
-    {
-      skill: "Sharing work & incorporating feedback",
-      level: "1",
-      description: "Sharing work & incorporating feedback L1\n\nYou share work regularly and ask for feedback on your working style and on the work itself.\n\nYou triage feedback on your work and ensure follow-ups.\n\nYou work to resolve situations when you\u2019re not looped in at the right times.\n\n"
-    },
-    {
-      skill: "Sharing work & incorporating feedback",
-      level: "2",
-      description: "Sharing work & incorporating feedback L2\n\nYou have a clear process: it\u2019s easy for work partners to know your priorities and predict the cadence of your work.\n\nYou\u2019re starting to work more independently.\n\nYou know how to manage bandwidth, and speak up if your plate is full.\n\nYou triage feedback diligently; nothing falls through the cracks.\n\n"
-    },
-    {
-      skill: "Sharing work & incorporating feedback",
-      level: "3",
-      description: "Sharing work & incorporating feedback L3\n\nYour process is adaptable and efficient.\n\nYou generate and maintain momentum.\n\nYou handle feedback thoroughly and gracefully, and know when to change direction vs. staying the course. You\u2019re becoming proficient at managing stakeholders and regularly work without close oversight.\n\n"
     },
     {
       skill: "Backlog management",
@@ -212,19 +197,19 @@
       description: "Visual (UI) L3\n\nYou possess a deep understanding of composition, color theory, typography, and design principles, and can use this knowledge to provide guidance and mentorship to junior team members.\n\nYou have a strong sense of the brand and can ensure that all design work is consistent with the brand identity.\n\nAdditionally, you stay up to date on industry trends and can identify opportunities to innovate and improve the visual design of the product.\n\n"
     },
     {
-      skill: "User experience (UX)",
+      skill: "User experience",
       level: "1",
-      description: "User experience (UX) L1\n\nYou have a basic understanding of user experience design principles and the importance of providing a positive UX. You actively collaborate with UX designers to gather feedback from users and improve the product's usability. You strive to improve your skills in UX design, ensuring that user needs are at the forefront of product development.\n\n"
+      description: "User experience L1\n\nYou have a basic understanding of user experience design principles and the importance of providing a positive UX. You actively collaborate with UX designers to gather feedback from users and improve the product's usability. You strive to improve your skills in UX design, ensuring that user needs are at the forefront of product development.\n\n"
     },
     {
-      skill: "User experience (UX)",
+      skill: "User experience",
       level: "2",
-      description: "User experience (UX) L2\n\nYou design a smooth UX for your products.\n\nYou structure the content in a way that is intuitive and easy to navigate for users. You evaluate the usability of the product and identify areas for improvement and prioritize them based on their impact on the user experience.\n\n"
+      description: "User experience L2\n\nYou design a smooth UX for your products.\n\nYou structure the content in a way that is intuitive and easy to navigate for users. You evaluate the usability of the product and identify areas for improvement and prioritize them based on their impact on the user experience.\n\n"
     },
     {
-      skill: "User experience (UX)",
+      skill: "User experience",
       level: "3",
-      description: "User experience (UX) L3\n\nYou design an enjoyable UX for your products.\n\nYour deep understanding of user-centric design enables you to drive exceptional user experiences that differentiate the product in the market.\n\n"
+      description: "User experience L3\n\nYou design an enjoyable UX for your products.\n\nYour deep understanding of user-centric design enables you to drive exceptional user experiences that differentiate the product in the market.\n\n"
     },
     {
       skill: "UX practices",
@@ -394,9 +379,9 @@
     name: "Domain knowledge",
     color: "#9747FF",
     skills: [
-      "Industry knowledge",
-      "Competitor awareness",
-      "Regulatory knowledge"
+      "Industry",
+      "Competitors",
+      "Regulations"
     ],
     skillDescriptions: [
       "Understanding of the workings and trends of a specific industry",
@@ -408,20 +393,18 @@
     name: "Process",
     color: "#0D99FF",
     skills: [
-      "Planning, execution & follow-up",
-      "Roadmap Planning",
-      "Launch Strategy",
+      "Planning & execution",
       "Communication",
-      "Sharing work & incorporating feedback",
-      "Backlog management"
+      "Roadmap planning",
+      "Backlog management",
+      "Launch strategy"
     ],
     skillDescriptions: [
       "Planning and executing tasks and initiatives while monitoring progress and adjusting as needed",
-      "Developing a long-term plan for achieving business goals and objectives",
-      "Planinng and execution of successful product or service launches",
-      "Effectively conveying information and ideas to others",
       "Collaborating with others and integrating feedback into work",
-      "Managing a backlog of tasks, prioritizing them based on  needs"
+      "Developing a long-term plan for achieving business goals and objectives",
+      "Managing a backlog of tasks, prioritizing them based on  needs",
+      "Planinng and execution of successful product or service launches"
     ]
   };
   var analyticsCategory = {
@@ -445,7 +428,7 @@
     color: "#14AE5C",
     skills: [
       "Visual (UI)",
-      "User experience (UX)",
+      "User experience",
       "UX practices",
       "User research"
     ],
@@ -499,7 +482,7 @@
     leadershipCategory,
     mindsetCategory
   ];
-  var OVERALL_WIDTH = 7400;
+  var OVERALL_WIDTH = 7120;
   function Widget() {
     const voteMap = useSyncedMap("skill-level");
     const [userLevel, setUserLevel] = useSyncedState("level", 1);
@@ -811,7 +794,7 @@
       horizontalAlignText: "center",
       lineHeight: "150%",
       fontFamily: "Inter",
-      fontSize: 24,
+      fontSize: 32,
       letterSpacing: -0.456,
       fontWeight: 700
     }, "L", voteMap.get(skill_key) || 1), /* @__PURE__ */ figma.widget.h(Text, {
@@ -821,8 +804,8 @@
       width: 250,
       height: 100,
       verticalAlignText: "bottom",
-      horizontalAlignText: "center",
-      lineHeight: "150%",
+      horizontalAlignText: "left",
+      lineHeight: "120%",
       fontFamily: "Inter",
       fontSize: 32,
       letterSpacing: -0.32,

@@ -23,9 +23,9 @@ const domainCategory = {
   name: "Domain knowledge",
   color: "#9747FF",
   skills: [
-    "Industry knowledge",
-    "Competitor awareness",
-    "Regulatory knowledge",
+    "Industry",
+    "Competitors",
+    "Regulations",
   ],
   skillDescriptions: [
     "Understanding of the workings and trends of a specific industry",
@@ -37,20 +37,18 @@ const processCategory = {
   name: "Process",
   color: "#0D99FF",
   skills: [
-    "Planning, execution & follow-up",
-    "Roadmap Planning",
-    "Launch Strategy",
+    "Planning & execution",
     "Communication",
-    "Sharing work & incorporating feedback",
+    "Roadmap planning",
     "Backlog management",
+    "Launch strategy", 
   ],
   skillDescriptions: [
     "Planning and executing tasks and initiatives while monitoring progress and adjusting as needed",
-    "Developing a long-term plan for achieving business goals and objectives",
-    "Planinng and execution of successful product or service launches",
-    "Effectively conveying information and ideas to others",
     "Collaborating with others and integrating feedback into work",
+    "Developing a long-term plan for achieving business goals and objectives",
     "Managing a backlog of tasks, prioritizing them based on  needs",
+    "Planinng and execution of successful product or service launches",
   ],
 };
 const analyticsCategory = {
@@ -74,7 +72,7 @@ const uxuiCategory = {
   color: "#14AE5C",
   skills: [
     "Visual (UI)",
-    "User experience (UX)",
+    "User experience",
     "UX practices",
     "User research",
   ],
@@ -130,7 +128,7 @@ const categories = [
   mindsetCategory,
 ];
 
-const OVERALL_WIDTH = 7400;
+const OVERALL_WIDTH = 7120;
 
 function Widget() {
   const voteMap = useSyncedMap<number>("skill-level");
@@ -577,7 +575,7 @@ function Skill(
         horizontalAlignText="center"
         lineHeight="150%"
         fontFamily="Inter"
-        fontSize={24}
+        fontSize={32}
         letterSpacing={-0.456}
         fontWeight={700}
       >
@@ -590,8 +588,8 @@ function Skill(
         width={250}
         height={100}
         verticalAlignText="bottom"
-        horizontalAlignText="center"
-        lineHeight="150%"
+        horizontalAlignText="left"
+        lineHeight="120%"
         fontFamily="Inter"
         fontSize={32}
         letterSpacing={-0.32}

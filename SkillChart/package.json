@@ -4,7 +4,7 @@
   "description": "Your Figma widget",
   "main": "code.js",
   "scripts": {
-    "build": "esbuild code.tsx --bundle --outfile=code.js"
+    "build": "esbuild code.tsx --watch --bundle --outfile=code.js"
   },
   "author": "",
   "license": "",
