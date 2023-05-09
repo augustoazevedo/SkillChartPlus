@@ -27,7 +27,7 @@ export const levelDescriptions = [
     skill: "Competitor awareness",
     level: "2",
     description:
-      "Competitor awareness L2\n\nYou are proficient in conducting in-depth competitive analysis and identifying strengths and weaknesses of competing products.\n\nYou develop strategies to capitalize on competitor vulnerabilities and create a unique value proposition for the product.\n\n",
+      "Competitor awareness L2\n\nYou conduct in-depth competitive analysis and identify strengths and weaknesses of competing products.\n\nYou develop strategies to create a unique value proposition for the product.\n\n",
   },
   {
     skill: "Competitor awareness",
