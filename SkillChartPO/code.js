@@ -481,9 +481,9 @@
     const [role, setRole] = useSyncedState("role", "Product");
     useEffect(() => {
       const values = voteMap.values().filter((x) => x > 0);
-      const newLevel = Math.round(values.reduce((acc, x) => acc + x, 0) / values.length);
-      if (newLevel !== userLevel) {
-        setUserLevel(newLevel);
+      const average = values.length ? Math.round(values.reduce((acc, x) => acc + x, 0) / values.length) : null;
+      if (average !== userLevel) {
+        setUserLevel(average);
       }
     });
     return /* @__PURE__ */ figma.widget.h(Frame, {
