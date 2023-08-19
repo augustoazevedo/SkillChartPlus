@@ -368,7 +368,7 @@
   var {
     useSyncedState,
     useSyncedMap,
-    usePropertyMenu,
+    useEffect,
     AutoLayout,
     Frame,
     Rectangle,
@@ -378,11 +378,7 @@
   var domainCategory = {
     name: "Domain knowledge",
     color: "#9747FF",
-    skills: [
-      "Industry",
-      "Competitors",
-      "Regulations"
-    ],
+    skills: ["Industry", "Competitors", "Regulations"],
     skillDescriptions: [
       "Understanding of the workings and trends of a specific industry",
       "Knowledge of the strengths, weaknesses, and strategies of competing businesses in the same industry",
@@ -426,12 +422,7 @@
   var uxuiCategory = {
     name: "UX/UI",
     color: "#14AE5C",
-    skills: [
-      "Visual (UI)",
-      "User experience",
-      "UX practices",
-      "User research"
-    ],
+    skills: ["Visual (UI)", "User experience", "UX practices", "User research"],
     skillDescriptions: [
       "Designing visually appealing and easy to use products",
       "Designing and creating user-centered digital experiences",
@@ -488,6 +479,13 @@
     const [userLevel, setUserLevel] = useSyncedState("level", 1);
     const [showLevels, setShowLevels] = useSyncedState("isShown", false);
     const [role, setRole] = useSyncedState("role", "Product");
+    useEffect(() => {
+      const values = voteMap.values().filter((x) => x > 0);
+      const newLevel = Math.round(values.reduce((acc, x) => acc + x, 0) / values.length);
+      if (newLevel !== userLevel) {
+        setUserLevel(newLevel);
+      }
+    });
     return /* @__PURE__ */ figma.widget.h(Frame, {
       name: "Everything",
       width: OVERALL_WIDTH,
@@ -554,9 +552,6 @@
       hidden: showLevels ? true : false,
       width: OVERALL_WIDTH,
       height: 200,
-      onClick: () => {
-        setUserLevel(1);
-      },
       hoverStyle: {
         opacity: showLevels ? 0.1 : 0.5
       }
@@ -581,9 +576,6 @@
       width: OVERALL_WIDTH,
       height: 200,
       hidden: showLevels ? true : false,
-      onClick: () => {
-        setUserLevel(2);
-      },
       hoverStyle: {
         opacity: showLevels ? 0.1 : 0.5
       }
@@ -608,9 +600,6 @@
       width: OVERALL_WIDTH,
       height: 200,
       hidden: showLevels ? true : false,
-      onClick: () => {
-        setUserLevel(3);
-      },
       hoverStyle: {
         opacity: showLevels ? 0.1 : 0.5
       }

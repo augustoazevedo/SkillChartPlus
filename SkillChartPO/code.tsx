@@ -2,7 +2,7 @@ const { widget } = figma;
 const {
   useSyncedState,
   useSyncedMap,
-  usePropertyMenu,
+  useEffect,
   AutoLayout,
   Frame,
   Rectangle,
@@ -22,11 +22,7 @@ type Category = {
 const domainCategory = {
   name: "Domain knowledge",
   color: "#9747FF",
-  skills: [
-    "Industry",
-    "Competitors",
-    "Regulations",
-  ],
+  skills: ["Industry", "Competitors", "Regulations"],
   skillDescriptions: [
     "Understanding of the workings and trends of a specific industry",
     "Knowledge of the strengths, weaknesses, and strategies of competing businesses in the same industry",
@@ -41,7 +37,7 @@ const processCategory = {
     "Communication",
     "Roadmap planning",
     "Backlog management",
-    "Launch strategy", 
+    "Launch strategy",
   ],
   skillDescriptions: [
     "Planning and executing tasks and initiatives while monitoring progress and adjusting as needed",
@@ -70,12 +66,7 @@ const analyticsCategory = {
 const uxuiCategory = {
   name: "UX/UI",
   color: "#14AE5C",
-  skills: [
-    "Visual (UI)",
-    "User experience",
-    "UX practices",
-    "User research",
-  ],
+  skills: ["Visual (UI)", "User experience", "UX practices", "User research"],
   skillDescriptions: [
     "Designing visually appealing and easy to use products",
     "Designing and creating user-centered digital experiences",
@@ -135,6 +126,20 @@ function Widget() {
   const [userLevel, setUserLevel] = useSyncedState<number>("level", 1);
   const [showLevels, setShowLevels] = useSyncedState<boolean>("isShown", false);
   const [role, setRole] = useSyncedState<string>("role", "Product"); //check this and delete if needed
+
+  // update current level automatically based on skills
+  useEffect(() => {
+    // skill level not evaluated by the user means 0 and should be ignored
+    const values = voteMap.values().filter((x) => x > 0);
+    // average of all skills
+    const newLevel = Math.round(
+      values.reduce((acc, x) => acc + x, 0) / values.length
+    );
+    if (newLevel !== userLevel) {
+      setUserLevel(newLevel);
+    }
+  });
+
   // const roleOptions = [
   //   { option: "Design", label: "Design" },
   //   { option: "Writing", label: "Writing" },
@@ -235,9 +240,9 @@ function Widget() {
           hidden={showLevels ? true : false}
           width={OVERALL_WIDTH}
           height={200}
-          onClick={() => {
-            setUserLevel(1);
-          }}
+          // onClick={() => {
+          //   setUserLevel(1);
+          // }}
           hoverStyle={{
             opacity: showLevels ? 0.1 : 0.5,
           }}
@@ -270,9 +275,9 @@ function Widget() {
           width={OVERALL_WIDTH}
           height={200}
           hidden={showLevels ? true : false}
-          onClick={() => {
-            setUserLevel(2);
-          }}
+          // onClick={() => {
+          //   setUserLevel(2);
+          // }}
           hoverStyle={{
             opacity: showLevels ? 0.1 : 0.5,
           }}
@@ -304,9 +309,9 @@ function Widget() {
           width={OVERALL_WIDTH}
           height={200}
           hidden={showLevels ? true : false}
-          onClick={() => {
-            setUserLevel(3);
-          }}
+          // onClick={() => {
+          //   setUserLevel(3);
+          // }}
           hoverStyle={{
             opacity: showLevels ? 0.1 : 0.5,
           }}
@@ -388,7 +393,8 @@ function Widget() {
           })}
         </AutoLayout>
         <AutoLayout name="Categories" overflow="visible">
-          {categories.map((category, i) => { //
+          {categories.map((category, i) => {
+            //
             // Draw Category Labels
             // console.log(`The category is ${category.name}`);
             return Category(
@@ -398,7 +404,6 @@ function Widget() {
               category.skills.length,
               `${category.name}`,
               i === 0 //
-
             );
           })}
         </AutoLayout>
