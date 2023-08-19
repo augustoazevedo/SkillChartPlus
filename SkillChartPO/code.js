@@ -474,6 +474,11 @@
     mindsetCategory
   ];
   var OVERALL_WIDTH = 7120;
+  function round(whole) {
+    const fraction = whole % 1;
+    const integer = whole - fraction;
+    return integer + (fraction <= 0.5 ? 0 : 1);
+  }
   function Widget() {
     const voteMap = useSyncedMap("skill-level");
     const [userLevel, setUserLevel] = useSyncedState("level", 1);
@@ -481,7 +486,7 @@
     const [role, setRole] = useSyncedState("role", "Product");
     useEffect(() => {
       const values = voteMap.values().filter((x) => x > 0);
-      const average = values.length ? Math.round(values.reduce((acc, x) => acc + x, 0) / values.length) : null;
+      const average = values.length ? round(values.reduce((acc, x) => acc + x, 0) / values.length) : null;
       if (average !== userLevel) {
         setUserLevel(average);
       }

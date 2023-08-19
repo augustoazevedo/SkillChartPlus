@@ -121,6 +121,12 @@ const categories = [
 
 const OVERALL_WIDTH = 7120;
 
+function round(whole: number): number {
+  const fraction = whole % 1;
+  const integer = whole - fraction;
+  return integer + (fraction <= 0.5 ? 0 : 1);
+}
+
 function Widget() {
   const voteMap = useSyncedMap<number>("skill-level");
   const [userLevel, setUserLevel] = useSyncedState<number>("level", 1);
@@ -133,7 +139,7 @@ function Widget() {
     const values = voteMap.values().filter((x) => x > 0);
     // algebraic average of all skills
     const average = values.length
-      ? Math.round(values.reduce((acc, x) => acc + x, 0) / values.length)
+      ? round(values.reduce((acc, x) => acc + x, 0) / values.length)
       : null;
     if (average !== userLevel) {
       setUserLevel(average);
