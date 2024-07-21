@@ -1,0 +1,18 @@
+{
+    "name": "SkillChart-Plus",
+    "version": "1.0.0",
+    "description": "Your Figma widget for helping evaliate professional skils.",
+    "main": "code.js",
+    "scripts": {
+        "build": "esbuild src/code.tsx --watch --bundle --outfile=code.js --target=es6"
+    },
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "@figma/plugin-typings": "*",
+        "@figma/widget-typings": "^1.4.0",
+        "esbuild": "^0.23.0",
+        "typescript": "*"
+    },
+    "dependencies": {}
+}

@@ -1,0 +1,10 @@
+{
+    "name": "Skill Chart+ (Multiple Roles)",
+    "id": "1396905117376563976",
+    "api": "1.0.0",
+    "main": "code.js",
+    "permissions": ["currentuser"],
+    "editorType": ["figjam"],
+    "containsWidget": true,
+    "widgetApi": "1.0.0"
+}
