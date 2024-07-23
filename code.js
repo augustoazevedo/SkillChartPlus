@@ -128,7 +128,7 @@
     },
     {
       name: "Agile Methodologies",
-      color: "#32CD32",
+      color: "#F44DBB",
       skills: [
         {
           name: "Scrum",
