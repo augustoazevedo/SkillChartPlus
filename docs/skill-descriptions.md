@@ -218,13 +218,13 @@
 **Levels:**
 - **Level 1:**
 
-  
+  You have a basic understanding of how to create a product roadmap. You require guidance on how to prioritize features and communicate the roadmap.
 - **Level 2:**
 
-  
+  You can create a product roadmap and prioritize features effectively. You are building your skills in communicating the roadmap to stakeholders.
 - **Level 3:**
 
-  
+  You can create and communicate a product roadmap that aligns with business goals. You can balance competing priorities and adjust the roadmap as necessary.
 
 ### Backlog management
 
@@ -264,13 +264,13 @@
 **Levels:**
 - **Level 1:**
 
-  
+  You have a basic understanding of how to plan and execute a product launch. You require guidance on how to create a launch plan and coordinate with stakeholders.
 - **Level 2:**
 
-  
+  You can plan and execute a product launch, including developing launch plans and coordinating with stakeholders. You are building your skills in optimizing launch processes.
 - **Level 3:**
 
-  
+  You can plan and execute successful product launches that meet business goals. You can optimize launch processes and effectively coordinate with cross-functional teams.
 
 
 ## Agile Methodologies

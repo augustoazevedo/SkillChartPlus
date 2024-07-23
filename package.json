@@ -4,7 +4,8 @@
     "description": "Your Figma widget for helping evaliate professional skils.",
     "main": "code.js",
     "scripts": {
-        "build": "esbuild src/code.tsx --watch --bundle --outfile=code.js --target=es6"
+        "build": "esbuild src/code.tsx --watch --bundle --outfile=code.js --target=es6",
+        "doc": "ts-node ./docs/doc-gen.ts > ./docs/skill-descriptions.md"
     },
     "author": "",
     "license": "MIT",

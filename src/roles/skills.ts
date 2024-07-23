@@ -87,7 +87,11 @@ export default [
                     SOFTWARE_ENGINEER,
                     ENGINEERING_MANAGER,
                 ],
-                levels: { "1": "", "2": "", "3": "" },
+                levels: {
+                    "1": "You have a basic understanding of how to create a product roadmap. You require guidance on how to prioritize features and communicate the roadmap.",
+                    "2": "You can create a product roadmap and prioritize features effectively. You are building your skills in communicating the roadmap to stakeholders.",
+                    "3": "You can create and communicate a product roadmap that aligns with business goals. You can balance competing priorities and adjust the roadmap as necessary.",
+                },
             },
             {
                 name: "Backlog management",
@@ -112,7 +116,11 @@ export default [
                 description:
                     "Planinng and execution of successful product or service launches",
                 roles: [PRODUCT_MANAGER],
-                levels: { "1": "", "2": "", "3": "" },
+                levels: {
+                    "1": "You have a basic understanding of how to plan and execute a product launch. You require guidance on how to create a launch plan and coordinate with stakeholders.",
+                    "2": "You can plan and execute a product launch, including developing launch plans and coordinating with stakeholders. You are building your skills in optimizing launch processes.",
+                    "3": "You can plan and execute successful product launches that meet business goals. You can optimize launch processes and effectively coordinate with cross-functional teams.",
+                },
             },
         ],
     },

@@ -8,6 +8,8 @@
 
 This Figma widget is designed to evaluate the competencies of professionals in various roles, such as Product Manger, UX Designer, Software Engineer, and Data Engineer. It helps in assessing skills across different categories, ensuring a comprehensive evaluation process.
 
+> ❗️ **Please feel free to suggest any changes, adjustments, or corrections.**
+
 ![Widget Preview](./images/CoverArt.png)
 
 ## Roles
