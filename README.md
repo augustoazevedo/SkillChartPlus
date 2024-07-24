@@ -6,7 +6,7 @@
 > - **Noah Levin**
 >     -  [**Skills Chart**](https://www.figma.com/community/widget/1207836110040407856/skills-chart) -> [Source Code](https://github.com/nlevin/figmadesign/tree/main/SkillChart)
 > - **Lala Azizli**
->    - [**Skill Chart for Product Owners**](https://www.figma.com/community/widget/1237852363698644601/skill-chart-for-product-owners) -> [Source Codee](https://github.com/lazizli/POlevels)
+>    - [**Skill Chart for Product Owners**](https://www.figma.com/community/widget/1237852363698644601/skill-chart-for-product-owners) -> [Source Code](https://github.com/lazizli/POlevels)
 
 This Figma widget is designed to evaluate the competencies of professionals in various roles, such as Product Manger, UX Designer, Software Engineer, and Data Engineer. It helps in assessing skills across different categories, ensuring a comprehensive evaluation process.
 
