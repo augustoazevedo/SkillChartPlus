@@ -844,6 +844,11 @@
     Text,
     SVG
   } = widget;
+  function getOverallWidth(role) {
+    return 280 * role.categories.reduce((size, category) => {
+      return size + category.skills.length;
+    }, 0) + 400;
+  }
   function round(whole) {
     const fraction = whole % 1;
     const integer = whole - fraction;
@@ -853,7 +858,7 @@
     const voteMap = useSyncedMap("skill-level");
     const [userLevel, setUserLevel] = useSyncedState("level", 1);
     const [userName, setUserName] = useSyncedState("userName", "-");
-    const [overallWidth, setOverallWidth] = useSyncedState("overallWidth", 7120);
+    const [overallWidth, setOverallWidth] = useSyncedState("overallWidth", getOverallWidth(roles_default[0]));
     const [showLevels, setShowLevels] = useSyncedState("showLevels", true);
     const [showName, setShowName] = useSyncedState("showName", true);
     const [role, setRole] = useSyncedState("role", roles_default[0]);
@@ -898,9 +903,7 @@
         if (propertyName === "roles") {
           const role2 = roles_default.find((obj) => obj.name === propertyValue);
           setRole(role2);
-          setOverallWidth(280 * role2.categories.reduce((size, category) => {
-            return size + category.skills.length;
-          }, 0) + 400);
+          setOverallWidth(getOverallWidth(roles_default[0]));
         } else if (propertyName == "nameToggle") {
           let localShowName = !showName;
           setShowName(localShowName);

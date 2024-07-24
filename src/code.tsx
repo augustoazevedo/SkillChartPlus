@@ -31,6 +31,9 @@ type Skill = {
   levels: Object;
 };
 
+function getOverallWidth(role){
+  return 280 * (role.categories.reduce((size, category)=> {return size + category.skills.length}, 0))+ 400;
+}
 
 function round(whole: number): number {
   const fraction = whole % 1;
@@ -42,7 +45,7 @@ function Widget() {
   const voteMap = useSyncedMap<string>("skill-level");
   const [userLevel, setUserLevel] = useSyncedState<number>("level", 1);
   const [userName, setUserName] = useSyncedState<string>("userName", "-");
-  const [overallWidth, setOverallWidth] = useSyncedState<number>("overallWidth", 7120);
+  const [overallWidth, setOverallWidth] = useSyncedState<number>("overallWidth", getOverallWidth(roles[0]));
   const [showLevels, setShowLevels] = useSyncedState<boolean>("showLevels", true);
   const [showName, setShowName] = useSyncedState<boolean>("showName", true);
   const [role, setRole] = useSyncedState<Role>("role", roles[0]);
@@ -92,7 +95,7 @@ function Widget() {
       if (propertyName === "roles") {
         const role = roles.find(obj => obj.name === propertyValue);
         setRole(role)
-        setOverallWidth(280 * (role.categories.reduce((size, category)=> {return size + category.skills.length}, 0))+ 400)
+        setOverallWidth(getOverallWidth(roles[0]))
       } else if (propertyName == "nameToggle") {
         let localShowName = !showName
         setShowName(localShowName);
