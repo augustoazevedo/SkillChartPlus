@@ -1,4 +1,6 @@
-# Skill Chart + (Figma Widget)
+# [Skill Chart + (Figma Widget)](https://www.figma.com/community/widget/1397734800137676007/skills-chart-milti-role)
+
+> [Check it out in Figma](https://www.figma.com/community/widget/1397734800137676007/skills-chart-milti-role)
 
 > Based on the work of 
 > - **Noah Levin**

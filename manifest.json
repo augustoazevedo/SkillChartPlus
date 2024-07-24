@@ -1,10 +1,12 @@
 {
-    "name": "Skills Chart+ (Milti Role)",
-    "id": "1396905117376563976",
+    "name": "Skills Chart+ (Milti role)",
+    "id": "1397734800137676007",
     "api": "1.0.0",
     "main": "code.js",
     "permissions": ["currentuser"],
+    "documentAccess": "dynamic-page",
     "editorType": ["figjam"],
+    "networkAccess": { "allowedDomains": ["none"] },
     "containsWidget": true,
     "widgetApi": "1.0.0"
 }
