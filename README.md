@@ -90,3 +90,5 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 For any questions or feedback, please open an issue.
 
+
+![Alt](https://repobeats.axiom.co/api/embed/ec56c2a00df36631af1816b92137dda441c5b399.svg "Repobeats analytics image")
