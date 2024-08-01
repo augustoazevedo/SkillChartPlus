@@ -95,7 +95,7 @@ function Widget() {
       if (propertyName === "roles") {
         const role = roles.find(obj => obj.name === propertyValue);
         setRole(role)
-        setOverallWidth(getOverallWidth(roles[0]))
+        setOverallWidth(getOverallWidth(role))
       } else if (propertyName == "nameToggle") {
         let localShowName = !showName
         setShowName(localShowName);

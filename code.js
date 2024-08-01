@@ -903,7 +903,7 @@
         if (propertyName === "roles") {
           const role2 = roles_default.find((obj) => obj.name === propertyValue);
           setRole(role2);
-          setOverallWidth(getOverallWidth(roles_default[0]));
+          setOverallWidth(getOverallWidth(role2));
         } else if (propertyName == "nameToggle") {
           let localShowName = !showName;
           setShowName(localShowName);
